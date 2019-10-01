@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="@color/gray"
+    android:scrollbars="none"
+    tools:context=".FragmentVideo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Escandalo en plaza vea"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white2"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="260dp"
+                    android:layout_height="164dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fabricaban falsos zaptos de marcas conocidas"
+                android:textSize="15dp"
+                android:textColor="@color/white2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <VideoView
+                    android:id="@+id/videoView2"
+                    android:layout_width="260dp"
+                    android:layout_height="164dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Regreso despues de 39 años y se encontro con deudas"
+                android:textSize="15dp"
+                android:textColor="@color/white2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <VideoView
+                    android:id="@+id/videoView3"
+                    android:layout_width="260dp"
+                    android:layout_height="164dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <VideoView
+                    android:id="@+id/videoView9"
+                    android:layout_width="260dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+

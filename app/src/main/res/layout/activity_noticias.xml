@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:card-viwe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".home_noticias"
+    android:orientation="vertical">
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/barra_menu"
+    android:layout_below="@+id/barra"
+    >
+
+    <ScrollView
+        android:id="@+id/centro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barra"
+        android:layout_above="@+id/barra_menu"
+        android:scrollbars="none"
+        android:fillViewport="true"
+
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideInset"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+
+            >
+
+            <android.support.v7.widget.CardView
+                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="6dp"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginRight="6dp"
+                 android:layout_marginBottom="8dp"
+                 card_view:cardCornerRadius="9dp"
+                 card_view:cardElevation="7dp"
+                 android:background="@color/black"
+
+
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+
+                     >
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+
+                     <ImageView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="495dp"
+                         android:scaleType="fitXY"
+                         app:srcCompat="@mipmap/noticia22"
+                         android:outlineSpotShadowColor="@color/white"
+                         android:outlineAmbientShadowColor="@color/white"
+
+
+                         />
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Las señales inalámbricas están prohibidas en esta pequeña ciudad de West Virginia"
+                             android:textSize="30dp"
+                             android:layout_marginTop="20dp"
+                             android:layout_marginLeft="20dp"
+                             android:layout_marginRight="50dp"
+                                android:textColor="@color/white2"
+                             android:textStyle="bold"
+                             />
+
+                     </RelativeLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:background="@color/gray"
+                         >
+
+                         <Button
+                             android:id="@+id/descarga1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:text="Descargar"
+                             android:textColor="@color/white2"
+                             android:textSize="11dp"
+                             android:typeface="monospace"
+                             android:background="@color/lightgray"
+
+                             />
+
+                         <TextView
+
+                             android:layout_width="0.5dp"
+                             android:layout_height="match_parent"
+                             android:background="@color/white4"
+
+                             />
+
+                         <Button
+                             android:id="@+id/btnnot1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:text="Ver"
+                             android:textColor="@color/white2"
+                             android:textSize="11dp"
+                             android:typeface="monospace"
+                             android:background="@color/lightgray"
+                             />
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+             </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                card_view:cardCornerRadius="9dp"
+                card_view:cardElevation="7dp"
+                android:background="@color/black"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="495dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/noticia28"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:outlineAmbientShadowColor="@color/white"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/prubea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="¿Por qué somos las únicas especies humanas?"
+                            android:textSize="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="50dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        >
+
+                        <Button
+                            android:id="@+id/descarga2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Descargar"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white4"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnnot2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/lightgray"
+                            android:text="Ver"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                card_view:cardCornerRadius="9dp"
+                card_view:cardElevation="7dp"
+                android:background="@color/black"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="495dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/noticia01"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:outlineAmbientShadowColor="@color/white"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5 enfermedades que de tus mascotas que te puedes tener"
+                            android:textSize="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="50dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        >
+
+                        <Button
+                            android:id="@+id/descarga3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Descargar"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white4"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnnot3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ver"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                card_view:cardCornerRadius="9dp"
+                card_view:cardElevation="7dp"
+                android:background="@color/black"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="495dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/noticia09"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:outlineAmbientShadowColor="@color/white"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="¿Los niños nacen con un mejor razonamiento espacial que las niñas?"
+                            android:textSize="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="50dp"
+                            android:textColor="@color/white2"
+                            android:textStyle="bold"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        >
+
+                        <Button
+                            android:id="@+id/descarga4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Descargar"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white4"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnnot4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ver"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                card_view:cardCornerRadius="9dp"
+                card_view:cardElevation="7dp"
+                android:background="@color/black"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="495dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/noticia27"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:outlineAmbientShadowColor="@color/white"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Puedes construir habilidades de \'trabajo profundo\' para aumentar la productividad"
+                            android:textSize="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="50dp"
+                            android:textColor="@color/white2"
+                            android:textStyle="bold"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        >
+
+                        <Button
+                            android:id="@+id/descarga5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Descargar"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white4"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnnot5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ver"
+                            android:textColor="@color/white2"
+                            android:textSize="11dp"
+                            android:typeface="monospace"
+                            android:background="@color/lightgray"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

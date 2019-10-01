@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:card-viwe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="top"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/barra_menu"
+        android:layout_below="@+id/barra"
+        >
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/barra_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dp"
+            android:background="@color/black"
+
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="top"
+                android:background="@drawable/shadow" />
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/buttonNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@drawable/item_selected"
+                app:itemTextColor="@color/lightblue"
+                design:menu="@menu/menu" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
